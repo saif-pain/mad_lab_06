@@ -22,7 +22,9 @@ class _AppBodyState extends State<AppBody> {
   Widget build(BuildContext context) {
     return Scaffold(
         body: Center(child: pages[currentIndex]),
-        bottomNavigationBar: BottomNavigationBar(onTap: onTapMethod, items: [
+        bottomNavigationBar: BottomNavigationBar(onTap: onTapMethod,
+        currentIndex: currentIndex,
+         items: [
           BottomNavigationBarItem(
             icon: Icon(AntDesign.home_outline),
             label: "Home",
